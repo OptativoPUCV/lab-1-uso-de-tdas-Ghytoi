@@ -61,7 +61,7 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) 
 {
    int control, suma = 0;
-   List *valor;
+   List *valor = NULL;
    valor = first(L);
    for(control = 1; control <= 10; control++)
    {
@@ -82,8 +82,11 @@ posiciona en el elemento anterior.
 
 void eliminaElementos(List*L, int elem) 
 {
-   int control, valor;
-   valor = (int)first(L);
+   List *valor = NULL;
+   valor = malloc(sizeof(List*));
+   valor = first(L);
+
+   int control;
    for(control = 1; control <= 10; control++)
    {
       if(valor == elem) popCurrent(L);
