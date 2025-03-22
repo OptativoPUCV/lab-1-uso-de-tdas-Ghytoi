@@ -82,13 +82,12 @@ posiciona en el elemento anterior.
 void eliminaElementos(List*L, int elem) 
 {
    int control, valor;
-   valor = first(L);
+   valor = (int)first(L);
    for(control = 1; control <= 10; control++)
    {
       if(valor == elem) popCurrent(L);
       next(L);
    }
-   return 0;
 }
 
 /*
@@ -100,7 +99,7 @@ Puedes usar una pila auxiliar.
 
 void copia_pila(Stack* P1, Stack* P2) 
 {
-   
+
 }
 
 /*
