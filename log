@@ -92,3 +92,21 @@ exercises.c:92:16: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 15ab7d3
+Sat, Mar 22, 2025  4:07:14 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:68:15: error: invalid use of incomplete typedef 'List'
+   68 |       suma += (*valor);
+      |               ^
+exercises.c:63:17: error: variable 'suma' set but not used [-Werror=unused-but-set-variable]
+   63 |    int control, suma = 0;
+      |                 ^~~~
+exercises.c: In function 'eliminaElementos':
+exercises.c:92:10: error: invalid use of incomplete typedef 'List'
+   92 |       if((*valor) == elem) popCurrent(L);
+      |          ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+96ebd32
