@@ -44,7 +44,6 @@ Al finalizar retorna la lista creada.
 List* crea_lista() 
 {
    List* L = create_list();
-   if (L == NULL) exit(EXIT_FAILURE);
 
    unsigned short control;
    for (control = 1; control <= 10; control++)
@@ -59,7 +58,15 @@ Ejercicio 2.
 Crea una función que reciba una lista de enteros (int*) y 
 retorne la suma de sus elementos.
 */
-int sumaLista(List *L) {
+int sumaLista(List *L) 
+{
+   int control, suma = 0, valor;
+   valor = first(L);
+   for(control = 1; control <= 10; control++)
+   {
+      suma += valor;
+      next(L);
+   }
    return 0;
 }
 
@@ -72,8 +79,16 @@ Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
 
-void eliminaElementos(List*L, int elem){
-
+void eliminaElementos(List*L, int elem) 
+{
+   int control, valor;
+   valor = first(L);
+   for(control = 1; control <= 10; control++)
+   {
+      if(valor == elem) popCurrent(L);
+      next(L);
+   }
+   return 0;
 }
 
 /*
@@ -83,7 +98,9 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack* P1, Stack* P2) {
+void copia_pila(Stack* P1, Stack* P2) 
+{
+   
 }
 
 /*
