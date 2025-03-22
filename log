@@ -34,3 +34,16 @@ exercises.c:85:12: error: cast from pointer to integer of different size [-Werro
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5cbff0c
+Sat, Mar 22, 2025  3:59:28 PM: 
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:64:10: error: assignment to 'int' from 'void *' makes integer from pointer without a cast [-Werror=int-conversion]
+   64 |    valor = first(L);
+      |          ^
+exercises.c: In function 'eliminaElementos':
+exercises.c:85:12: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   85 |    valor = (int)first(L);
+      |            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c4d849b
