@@ -60,11 +60,12 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) 
 {
-   int control, suma = 0, valor;
-   valor = (int)first(L);
+   int control, suma = 0;
+   List *valor;
+   valor = first(L);
    for(control = 1; control <= 10; control++)
    {
-      suma += valor;
+      suma += (int)valor;
       next(L);
    }
    return 0;
