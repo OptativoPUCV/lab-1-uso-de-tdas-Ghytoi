@@ -41,8 +41,16 @@ debes reservar memoria para cada elemento que agregues.
 Al finalizar retorna la lista creada.
 */
 
-List* crea_lista() {
+List* crea_lista() 
+{
    List* L = create_list();
+   if (L == NULL) exit(EXIT_FAILURE);
+
+   unsigned short control;
+   for (control = 1; control <= 10; control++)
+   {
+      pushCurrent(L, &control);
+   }
    return L;
 }
 
