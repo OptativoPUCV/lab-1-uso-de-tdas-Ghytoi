@@ -1197,3 +1197,59 @@ exercises.c:159:48: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 b32d060
+Sun, Mar 23, 2025  7:23:56 PM: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:156:25: error: multi-character character constant [-Werror=multichar]
+  156 |       if (lastValor1 == '40' && lastValor2 == '41') balanceado++;
+      |                         ^~~~
+exercises.c:156:22: error: comparison between pointer and integer [-Werror]
+  156 |       if (lastValor1 == '40' && lastValor2 == '41') balanceado++;
+      |                      ^~
+exercises.c:156:47: error: multi-character character constant [-Werror=multichar]
+  156 |       if (lastValor1 == '40' && lastValor2 == '41') balanceado++;
+      |                                               ^~~~
+exercises.c:156:44: error: comparison between pointer and integer [-Werror]
+  156 |       if (lastValor1 == '40' && lastValor2 == '41') balanceado++;
+      |                                            ^~
+exercises.c:157:30: error: multi-character character constant [-Werror=multichar]
+  157 |       else if (lastValor1 == '91' && lastValor2 == '93') balanceado++;
+      |                              ^~~~
+exercises.c:157:27: error: comparison between pointer and integer [-Werror]
+  157 |       else if (lastValor1 == '91' && lastValor2 == '93') balanceado++;
+      |                           ^~
+exercises.c:157:52: error: multi-character character constant [-Werror=multichar]
+  157 |       else if (lastValor1 == '91' && lastValor2 == '93') balanceado++;
+      |                                                    ^~~~
+exercises.c:157:49: error: comparison between pointer and integer [-Werror]
+  157 |       else if (lastValor1 == '91' && lastValor2 == '93') balanceado++;
+      |                                                 ^~
+exercises.c:158:30: error: multi-character character constant [-Werror=multichar]
+  158 |       else if (lastValor1 == '91' && lastValor2 == '93') balanceado++;
+      |                              ^~~~
+exercises.c:158:27: error: comparison between pointer and integer [-Werror]
+  158 |       else if (lastValor1 == '91' && lastValor2 == '93') balanceado++;
+      |                           ^~
+exercises.c:158:52: error: multi-character character constant [-Werror=multichar]
+  158 |       else if (lastValor1 == '91' && lastValor2 == '93') balanceado++;
+      |                                                    ^~~~
+exercises.c:158:49: error: comparison between pointer and integer [-Werror]
+  158 |       else if (lastValor1 == '91' && lastValor2 == '93') balanceado++;
+      |                                                 ^~
+exercises.c:159:30: error: multi-character character constant [-Werror=multichar]
+  159 |       else if (lastValor1 == '123' && lastValor2 == '125') balanceado++;
+      |                              ^~~~~
+exercises.c:159:27: error: comparison between pointer and integer [-Werror]
+  159 |       else if (lastValor1 == '123' && lastValor2 == '125') balanceado++;
+      |                           ^~
+exercises.c:159:53: error: multi-character character constant [-Werror=multichar]
+  159 |       else if (lastValor1 == '123' && lastValor2 == '125') balanceado++;
+      |                                                     ^~~~~
+exercises.c:159:50: error: comparison between pointer and integer [-Werror]
+  159 |       else if (lastValor1 == '123' && lastValor2 == '125') balanceado++;
+      |                                                  ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+36f0b0c
