@@ -1291,3 +1291,17 @@ exercises.c:159:53: error: multi-character character constant [-Werror=multichar
 cc1.exe: all warnings being treated as errors
 Compilation failed
 55fdc8d
+Sun, Mar 23, 2025  7:25:54 PM: 
+ exercises.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:153:25: error: initialization of 'char' from 'void *' makes integer from pointer without a cast [-Werror=int-conversion]
+  153 |       char lastValor1 = pop(pila1);
+      |                         ^~~
+exercises.c:154:25: error: initialization of 'char' from 'void *' makes integer from pointer without a cast [-Werror=int-conversion]
+  154 |       char lastValor2 = pop(pila2);
+      |                         ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3c073bd
