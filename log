@@ -241,3 +241,17 @@ exercises.c:91:10: error: cast from pointer to integer of different size [-Werro
 cc1.exe: all warnings being treated as errors
 Compilation failed
 db8bf4d
+Sun, Mar 23, 2025 12:43:33 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:69:27: error: invalid use of incomplete typedef 'List'
+   69 |       suma += ((int)(valor->data));
+      |                           ^~
+exercises.c: In function 'eliminaElementos':
+exercises.c:91:21: error: invalid use of incomplete typedef 'List'
+   91 |       if((int)(valor->data) == elem) popCurrent(L);
+      |                     ^~
+Compilation failed
+c210f8f
