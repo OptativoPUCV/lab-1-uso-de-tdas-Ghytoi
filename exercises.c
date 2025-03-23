@@ -46,9 +46,9 @@ List* crea_lista()
    List* L = create_list();
 
    unsigned short control;
-   for (control = 1; ; control++)
+   for (control = 1; control < 10 ; control++)
    {
-      pushback(L, &control);
+      pushBack(L, &control);
    }
    return L;
 }
