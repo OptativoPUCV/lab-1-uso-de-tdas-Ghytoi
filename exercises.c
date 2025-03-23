@@ -106,13 +106,13 @@ void copia_pila(Stack* P1, Stack* P2)
 
    Stack *lastValor;
 
-   while (P1 != NULL)
+   while (top(P1) != NULL)
    {
       lastValor = top(P1);
       push(pilaAux, lastValor);  
    }
 
-   while (pilaAux != NULL)
+   while (top(pilaAux) != NULL)
    {
       lastValor = top(pilaAux);
       push(P2, lastValor); 
