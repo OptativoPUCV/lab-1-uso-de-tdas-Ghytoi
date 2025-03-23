@@ -48,7 +48,7 @@ List* crea_lista()
    int control; 
    for (control = 1; control <= 10; control++)
    {
-      L = (List *) realloc(L, control * sizeof(List));
+      L = (List *) realloc(L, control * sizeof(List*));
 
    }
    return L;
