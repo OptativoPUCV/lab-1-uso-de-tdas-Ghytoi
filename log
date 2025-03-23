@@ -837,3 +837,14 @@ Sun, Mar 23, 2025  4:19:36 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 1d3e453
+Sun, Mar 23, 2025  4:20:46 PM: 
+ exercises.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'crea_lista':
+exercises.c:48:8: error: unused variable 'control' [-Werror=unused-variable]
+   48 |    int control;
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5d00a7f

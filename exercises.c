@@ -46,11 +46,9 @@ List* crea_lista()
    List* L = create_list();
 
    int control; 
-   for (control = 1; control <= 10; control++)
-   {
-      L = (List *) realloc(L, control * sizeof(List*));
 
-   }
+   L = (List *) malloc(10 * sizeof(List*));
+   
    return L;
 }
 
