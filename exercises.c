@@ -44,9 +44,13 @@ Al finalizar retorna la lista creada.
 List* crea_lista() 
 {
    List* L = create_list();
+   int control;
+   for (control = 0; control < 10; control++)
+   {
+      L = (List *) malloc(sizeof(List));
+      pushBack(L, &control);
 
-   struct List* L = (struct List *) malloc(sizeof(struct List) * 10);
-   
+   }
    return L;
 }
 
