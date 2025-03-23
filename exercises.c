@@ -148,7 +148,7 @@ int parentesisBalanceados(char *cadena)
       push(pila1, dato1);
       push(pila2, dato2);
    }
-   while (pila1 != NULL)
+   while (top(pila1) != NULL)
    {
       char *lastValor1 = pop(pila1);
       char *lastValor2 = pop(pila2);
