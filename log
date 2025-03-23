@@ -660,3 +660,26 @@ C:/msys64/ucrt64/include/string.h:63:52: note: expected 'const char *' but argum
 cc1.exe: all warnings being treated as errors
 Compilation failed
 649a118
+Sun, Mar 23, 2025  3:45:51 PM: 
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:142:27: error: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Werror=int-conversion]
+  142 |          if (strcmp(cadena[control], cadena[control2]) == 0)
+      |                     ~~~~~~^~~~~~~~~
+      |                           |
+      |                           char
+In file included from test.c:3:
+C:/msys64/ucrt64/include/string.h:63:34: note: expected 'const char *' but argument is of type 'char'
+   63 |   int __cdecl strcmp(const char *_Str1,const char *_Str2);
+      |                      ~~~~~~~~~~~~^~~~~
+exercises.c:142:44: error: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Werror=int-conversion]
+  142 |          if (strcmp(cadena[control], cadena[control2]) == 0)
+      |                                      ~~~~~~^~~~~~~~~~
+      |                                            |
+      |                                            char
+C:/msys64/ucrt64/include/string.h:63:52: note: expected 'const char *' but argument is of type 'char'
+   63 |   int __cdecl strcmp(const char *_Str1,const char *_Str2);
+      |                                        ~~~~~~~~~~~~^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+650cfc5
