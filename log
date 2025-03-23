@@ -362,3 +362,17 @@ exercises.c:90:24: error: invalid use of incomplete typedef 'List'
       |                        ^~
 Compilation failed
 e206e8e
+Sun, Mar 23, 2025  1:57:09 PM: 
+ exercises.c | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:68:29: error: invalid use of incomplete typedef 'List'
+   68 |       suma += (*(int*)(valor->data));
+      |                             ^~
+exercises.c: In function 'eliminaElementos':
+exercises.c:89:24: error: invalid use of incomplete typedef 'List'
+   89 |       if (*(int*)(valor->data) == elem)
+      |                        ^~
+Compilation failed
+9b8b7b7
