@@ -278,3 +278,17 @@ exercises.c:86:10: error: variable 'valor' set but not used [-Werror=unused-but-
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0719580
+Sun, Mar 23, 2025 12:44:46 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:69:27: error: invalid use of incomplete typedef 'List'
+   69 |       suma += ((int)(valor->data));
+      |                           ^~
+exercises.c: In function 'eliminaElementos':
+exercises.c:91:21: error: invalid use of incomplete typedef 'List'
+   91 |       if((int)(valor->data) == elem) popCurrent(L);
+      |                     ^~
+Compilation failed
+f7a55f9

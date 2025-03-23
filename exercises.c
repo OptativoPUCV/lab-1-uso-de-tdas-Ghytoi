@@ -66,7 +66,7 @@ int sumaLista(List *L)
    valor = first(L);
    for(control = 1; control <= 10; control++)
    {
-      suma += ((int)(valor.data));
+      suma += ((int)(valor->data));
       valor = next(L);
    }
    return suma;
@@ -88,7 +88,7 @@ void eliminaElementos(List*L, int elem)
    int control;
    for(control = 1; control <= 10; control++)
    {
-      if((int)(valor.data) == elem) popCurrent(L);
+      if((int)(valor->data) == elem) popCurrent(L);
       valor = next(L);
    }
 }
