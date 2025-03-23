@@ -1165,3 +1165,35 @@ Sun, Mar 23, 2025  6:33:59 PM:
  tests:  4|1
 total_score: 50/70
 38a6d4f
+Sun, Mar 23, 2025  7:23:15 PM: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:156:22: error: comparison between pointer and integer [-Werror]
+  156 |       if (lastValor1 == 40 && lastValor2 == 41) balanceado++;
+      |                      ^~
+exercises.c:156:42: error: comparison between pointer and integer [-Werror]
+  156 |       if (lastValor1 == 40 && lastValor2 == 41) balanceado++;
+      |                                          ^~
+exercises.c:157:27: error: comparison between pointer and integer [-Werror]
+  157 |       else if (lastValor1 == 91 && lastValor2 == 93) balanceado++;
+      |                           ^~
+exercises.c:157:47: error: comparison between pointer and integer [-Werror]
+  157 |       else if (lastValor1 == 91 && lastValor2 == 93) balanceado++;
+      |                                               ^~
+exercises.c:158:27: error: comparison between pointer and integer [-Werror]
+  158 |       else if (lastValor1 == 91 && lastValor2 == 93) balanceado++;
+      |                           ^~
+exercises.c:158:47: error: comparison between pointer and integer [-Werror]
+  158 |       else if (lastValor1 == 91 && lastValor2 == 93) balanceado++;
+      |                                               ^~
+exercises.c:159:27: error: comparison between pointer and integer [-Werror]
+  159 |       else if (lastValor1 == 123 && lastValor2 == 125) balanceado++;
+      |                           ^~
+exercises.c:159:48: error: comparison between pointer and integer [-Werror]
+  159 |       else if (lastValor1 == 123 && lastValor2 == 125) balanceado++;
+      |                                                ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b32d060

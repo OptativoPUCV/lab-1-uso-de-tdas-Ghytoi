@@ -153,7 +153,10 @@ int parentesisBalanceados(char *cadena)
       char *lastValor1 = pop(pila1);
       char *lastValor2 = pop(pila2);
 
-      if (strcmp (lastValor1, lastValor2) == 0) balanceado++;
+      if (lastValor1 == 40 && lastValor2 == 41) balanceado++;
+      else if (lastValor1 == 91 && lastValor2 == 93) balanceado++;
+      else if (lastValor1 == 91 && lastValor2 == 93) balanceado++;
+      else if (lastValor1 == 123 && lastValor2 == 125) balanceado++;
    }
    if (balanceado == (talla/2))return 1;
    
