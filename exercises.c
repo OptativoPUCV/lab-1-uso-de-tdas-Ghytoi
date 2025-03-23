@@ -87,7 +87,7 @@ void eliminaElementos(List*L, int elem)
    int control;
    for(control = 1; control <= 10; control++)
    {
-      if(valor->data != NULL && *(int*)(valor->data) == elem) popCurrent(L);
+      if(*(int*)(valor->data) == elem) popCurrent(L);
       valor = next(L);
    }
 }
