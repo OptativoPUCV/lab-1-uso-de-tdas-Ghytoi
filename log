@@ -878,3 +878,19 @@ exercises.c:48:35: error: invalid application of 'sizeof' to incomplete type 'Li
       |                                   ^~~~
 Compilation failed
 413c1ce
+Sun, Mar 23, 2025  4:31:29 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'crea_lista':
+exercises.c:48:17: error: redefinition of 'L'
+   48 |    struct List* L = (List *) malloc(sizeof(struct List) * 10);
+      |                 ^
+exercises.c:46:10: note: previous definition of 'L' with type 'List *'
+   46 |    List* L = create_list();
+      |          ^
+exercises.c:48:44: error: invalid application of 'sizeof' to incomplete type 'struct List'
+   48 |    struct List* L = (List *) malloc(sizeof(struct List) * 10);
+      |                                            ^~~~~~
+Compilation failed
+13d7e03

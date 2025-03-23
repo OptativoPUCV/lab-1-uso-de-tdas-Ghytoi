@@ -45,7 +45,7 @@ List* crea_lista()
 {
    List* L = create_list();
 
-   L = (List *) realloc(L, sizeof(List) * 10);
+   struct List* L = (List *) malloc(sizeof(struct List) * 10);
    
    return L;
 }
