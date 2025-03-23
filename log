@@ -211,3 +211,18 @@ exercises.c:91:10: error: cast from pointer to integer of different size [-Werro
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4311ab4
+Sun, Mar 23, 2025 12:39:55 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:69:16: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   69 |       suma += ((int)(valor));
+      |                ^
+exercises.c: In function 'eliminaElementos':
+exercises.c:91:10: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   91 |       if((int)(valor) == elem) popCurrent(L);
+      |          ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+524d480

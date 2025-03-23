@@ -66,7 +66,7 @@ int sumaLista(List *L)
    valor = first(L);
    for(control = 1; control <= 10; control++)
    {
-      suma += (int)(*valor);
+      suma += ((int)(valor));
       next(L);
    }
    return suma;
