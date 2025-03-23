@@ -822,3 +822,13 @@ Sun, Mar 23, 2025  4:17:28 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 dfa9efa
+Sun, Mar 23, 2025  4:19:27 PM: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'crea_lista':
+exercises.c:51:48: error: invalid application of 'sizeof' to incomplete type 'List'
+   51 |       L = (List *) realloc(L, control * sizeof(List));
+      |                                                ^~~~
+Compilation failed
+b9197b5
