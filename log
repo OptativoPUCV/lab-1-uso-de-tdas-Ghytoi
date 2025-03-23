@@ -1099,3 +1099,17 @@ Sun, Mar 23, 2025  6:15:34 PM:
  1 file changed, 21 insertions(+), 23 deletions(-)
  tests:  0|0
 3f9462d
+Sun, Mar 23, 2025  6:16:54 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:144:13: error: assignment to 'char *' from 'char' makes pointer from integer without a cast [-Werror=int-conversion]
+  144 |       dato1 = cadena[control];
+      |             ^
+exercises.c:145:13: error: assignment to 'char *' from 'char' makes pointer from integer without a cast [-Werror=int-conversion]
+  145 |       dato2 = cadena[control2];
+      |             ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+fc2f249
