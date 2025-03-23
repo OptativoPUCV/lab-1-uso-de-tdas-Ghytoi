@@ -128,13 +128,10 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 int parentesisBalanceados(char *cadena)
 {
    int talla = 0, control, control2;
-   Stack *pila = create_stack();
-   Stack *pila2 = create_stack();
 
    //obtenemos talla
    while (cadena[talla] != '\0')
    {
-      push(pila, cadena[talla]);
       talla++;
    }
 
