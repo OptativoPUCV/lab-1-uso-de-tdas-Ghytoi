@@ -44,12 +44,7 @@ Al finalizar retorna la lista creada.
 List* crea_lista() 
 {
    List* L = create_list();
-<<<<<<< HEAD
    int control;
-=======
-
-   unsigned short control;
->>>>>>> e5c13ed46e8bbf588cc3564ad8e81e081d0b0576
    for (control = 1; control <= 10; control++)
    {
       int *dato = (int *) malloc(sizeof(int));
