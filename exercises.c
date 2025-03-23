@@ -44,11 +44,11 @@ Al finalizar retorna la lista creada.
 List* crea_lista() 
 {
    List* L = create_list();
-
+   L = (List*) malloc(sizeof(List*) * 10);
    unsigned short control;
    for (control = 1; control <= 10 ; control++)
    {
-      L = (List*) malloc(sizeof(List*) * control);
+      
       pushCurrent(L, &control);
    }
    return L;
