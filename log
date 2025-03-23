@@ -1134,3 +1134,28 @@ Sun, Mar 23, 2025  6:29:43 PM:
  tests:  4|1
 total_score: 50/70
 3f63640
+Sun, Mar 23, 2025  6:33:48 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:156:19: error: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Werror=int-conversion]
+  156 |       if (strcmp (*lastValor1, *lastValor2) == 0) balanceado++;
+      |                   ^~~~~~~~~~~
+      |                   |
+      |                   char
+In file included from test.c:3:
+C:/msys64/ucrt64/include/string.h:63:34: note: expected 'const char *' but argument is of type 'char'
+   63 |   int __cdecl strcmp(const char *_Str1,const char *_Str2);
+      |                      ~~~~~~~~~~~~^~~~~
+exercises.c:156:32: error: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Werror=int-conversion]
+  156 |       if (strcmp (*lastValor1, *lastValor2) == 0) balanceado++;
+      |                                ^~~~~~~~~~~
+      |                                |
+      |                                char
+C:/msys64/ucrt64/include/string.h:63:52: note: expected 'const char *' but argument is of type 'char'
+   63 |   int __cdecl strcmp(const char *_Str1,const char *_Str2);
+      |                                        ~~~~~~~~~~~~^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+803cb16
