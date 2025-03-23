@@ -153,9 +153,9 @@ int parentesisBalanceados(char *cadena)
       char *lastValor1 = pop(pila1);
       char *lastValor2 = pop(pila2);
 
-      if (lastValor1 == '(' && lastValor2 == ')') balanceado++;
-      else if (lastValor1 == '[' && lastValor2 == ']') balanceado++;
-      else if (lastValor1 == '{' && lastValor2 == '}') balanceado++;
+      if (*lastValor1 == '(' && *lastValor2 == ')') balanceado++;
+      else if (*lastValor1 == '[' && *lastValor2 == ']') balanceado++;
+      else if (*lastValor1 == '{' && *lastValor2 == '}') balanceado++;
    }
    if (balanceado == (talla/2))return 1;
    
