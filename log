@@ -982,3 +982,34 @@ Sun, Mar 23, 2025  5:11:02 PM:
  tests:  4|1
 total_score: 50/70
 3dcef63
+Sun, Mar 23, 2025  5:54:51 PM: 
+ exercises.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:141:25: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+  141 |       push(pila1, cadena[control]);
+      |                   ~~~~~~^~~~~~~~~
+      |                         |
+      |                         char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected 'void *' but argument is of type 'char'
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:142:25: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+  142 |       push(pila2, cadena[control]);
+      |                   ~~~~~~^~~~~~~~~
+      |                         |
+      |                         char
+stack.h:11:31: note: expected 'void *' but argument is of type 'char'
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:146:25: error: initialization of 'char' from 'void *' makes integer from pointer without a cast [-Werror=int-conversion]
+  146 |       char lastValor1 = pop(pila1);
+      |                         ^~~
+exercises.c:147:25: error: initialization of 'char' from 'void *' makes integer from pointer without a cast [-Werror=int-conversion]
+  147 |       char lastValor2 = pop(pila2);
+      |                         ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a17993a
