@@ -47,8 +47,8 @@ List* crea_lista()
    int control;
    for (control = 0; control < 10; control++)
    {
-      L = (List *) malloc(sizeof(List));
-      pushBack(L, &control);
+      int *dato = (int *) malloc(sizeof(int));
+      pushBack(L, &dato);
 
    }
    return L;
