@@ -45,6 +45,12 @@ List* crea_lista()
 {
    List* L = create_list();
 
+   int control; 
+   for (control = 0; control < 10; control++)
+   {
+      L = (List *) malloc(sizeof(List*) * control);
+   }
+
    return L;
 }
 
