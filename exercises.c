@@ -65,7 +65,7 @@ int sumaLista(List *L)
    int control, suma = 0;
    for(control = 1; control <= 10; control++)
    {
-      suma += (*(int*)(valor->data));
+      suma += (*(int*)(valor));
       valor = next(L);
    }
    return suma;
@@ -87,7 +87,7 @@ void eliminaElementos(List*L, int elem)
    int control;
    for(control = 1; control <= 10; control++)
    {
-      if(*(int*)(valor->data) == elem) popCurrent(L);
+      if(*(int*)(valor) == elem) popCurrent(L);
       valor = next(L);
    }
 }
@@ -125,7 +125,30 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
 
-int parentesisBalanceados(char *cadena) {
+int parentesisBalanceados(char *cadena)
+{
+   int talla = 0, control, control2;
+   Stack *pila = create_stack();
+   Stack *pila2 = create_stack();
+
+   //obtenemos talla
+   while (cadena[talla] != '\0')
+   {
+      push(pila, cadena[talla]);
+      talla++;
+   }
+
+   if (talla % 2 == 0)
+   {
+      for (control = 0, control2 = 9; control < (talla /2); )
+      {
+         if (strcmp(cadena[control], cadena[control2]) == 0)
+         {
+            control++, control2--;
+         }
+         else return 0;
+      }
+   }
    return 0;
 }
 

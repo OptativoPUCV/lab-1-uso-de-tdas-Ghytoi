@@ -598,3 +598,40 @@ exercises.c:90:23: error: invalid use of incomplete typedef 'List'
       |                       ^~
 Compilation failed
 06301ed
+Sun, Mar 23, 2025  3:40:01 PM: 
+ exercises.c | 29 ++++++++++++++++++++++++++---
+ 1 file changed, 26 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:137:24: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+  137 |       push(pila, cadena[talla]);
+      |                  ~~~~~~^~~~~~~
+      |                        |
+      |                        char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected 'void *' but argument is of type 'char'
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:145:27: error: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Werror=int-conversion]
+  145 |          if (strcmp(cadena[control], cadena[control2]) == 0)
+      |                     ~~~~~~^~~~~~~~~
+      |                           |
+      |                           char
+In file included from test.c:3:
+C:/msys64/ucrt64/include/string.h:63:34: note: expected 'const char *' but argument is of type 'char'
+   63 |   int __cdecl strcmp(const char *_Str1,const char *_Str2);
+      |                      ~~~~~~~~~~~~^~~~~
+exercises.c:145:44: error: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Werror=int-conversion]
+  145 |          if (strcmp(cadena[control], cadena[control2]) == 0)
+      |                                      ~~~~~~^~~~~~~~~~
+      |                                            |
+      |                                            char
+C:/msys64/ucrt64/include/string.h:63:52: note: expected 'const char *' but argument is of type 'char'
+   63 |   int __cdecl strcmp(const char *_Str1,const char *_Str2);
+      |                                        ~~~~~~~~~~~~^~~~~
+exercises.c:132:11: error: unused variable 'pila2' [-Werror=unused-variable]
+  132 |    Stack *pila2 = create_stack();
+      |           ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+78c04eb
