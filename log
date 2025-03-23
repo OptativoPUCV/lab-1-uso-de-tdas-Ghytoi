@@ -407,3 +407,21 @@ exercises.c:90:23: error: invalid use of incomplete typedef 'List'
       |                       ^~
 Compilation failed
 2ce798d
+Sun, Mar 23, 2025  2:07:09 PM: 
+ exercises.c | 15 ++++++++++++---
+ 1 file changed, 12 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:68:29: error: invalid use of incomplete typedef 'List'
+   68 |       suma += (*(int*)(valor->data));
+      |                             ^~
+exercises.c: In function 'eliminaElementos':
+exercises.c:89:27: error: implicit declaration of function 'getData' [-Werror=implicit-function-declaration]
+   89 |         int* data = (int*)getData(valor);  // Obtener datos usando la función correcta
+      |                           ^~~~~~~
+exercises.c:89:21: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   89 |         int* data = (int*)getData(valor);  // Obtener datos usando la función correcta
+      |                     ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c1f7721
