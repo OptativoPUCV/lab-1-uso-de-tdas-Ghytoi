@@ -952,3 +952,27 @@ Sun, Mar 23, 2025  5:07:20 PM:
  tests:  4|1
 total_score: 50/70
 3856e48
+Sun, Mar 23, 2025  5:09:24 PM: 
+ exercises.c | Unmerged
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function 'crea_lista':
+exercises.c:47:1: error: version control conflict marker in file
+   47 | <<<<<<< HEAD
+      | ^~~~~~~
+exercises.c:49:1: error: version control conflict marker in file
+   49 | =======
+      | ^~~~~~~
+exercises.c:52:1: error: version control conflict marker in file
+   52 | >>>>>>> e5c13ed46e8bbf588cc3564ad8e81e081d0b0576
+      | ^~~~~~~
+exercises.c:46:10: error: unused variable 'L' [-Werror=unused-variable]
+   46 |    List* L = create_list();
+      |          ^
+exercises.c:61:1: error: control reaches end of non-void function [-Werror=return-type]
+   61 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a30574e
