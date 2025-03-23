@@ -129,36 +129,34 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 
 int parentesisBalanceados(char *cadena)
 {
-    Stack *pila = create_stack();
-    size_t talla = strlen(cadena);
+   Stack *pila1 = create_stack();
+   Stack *pila2 = create_stack();
 
-    for (size_t i = 0; i < talla; i++)
-    {
-        if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{')
-        {
-            char *dato = (char *) malloc(sizeof(char));
-            *dato = cadena[i];
-            push(pila, dato);
-        }
-        else if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
-        {
-            if (is_empty(pila)) return 0;
+   size_t talla = strlen(cadena), control, control2, balanceado = 0;
 
-            char *top = pop(pila);
-            if ((*top == '(' && cadena[i] != ')') ||
-                (*top == '[' && cadena[i] != ']') ||
-                (*top == '{' && cadena[i] != '}'))
-            {
-                free(top);
-                return 0; // Desbalanceado
-            }
-            free(top);
-        }
-    }
+   if(talla % 2 != 0) return 0;
 
-    int resultado = is_empty(pila);
-    free_stack(pila);
-    return resultado;
+   for (control = 0, control2 = 9; control < talla; control++, control2--)
+   {
+      char *dato1 = (char *) malloc(sizeof(char));
+      char *dato2 = (char *) malloc(sizeof(char));
+
+      *dato1 = cadena[control];
+      *dato2 = cadena[control2];
+
+      push(pila1, dato1);
+      push(pila2, dato2);
+   }
+   while (pila1 != NULL)
+   {
+      char *lastValor1 = pop(pila1);
+      char *lastValor2 = pop(pila2);
+
+      if (strcmp (lastValor1, lastValor2) == 0) balanceado++;
+   }
+   if (balanceado == (talla/2))return 1;
+   
+   return 0;
 }
 
 
