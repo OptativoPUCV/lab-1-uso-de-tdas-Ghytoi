@@ -45,7 +45,7 @@ List* crea_lista()
 {
    List* L = create_list();
 
-   struct List* L = (List *) malloc(sizeof(struct List) * 10);
+   struct List* L = (struct List *) malloc(sizeof(struct List) * 10);
    
    return L;
 }
