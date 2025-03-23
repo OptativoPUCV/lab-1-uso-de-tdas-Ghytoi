@@ -688,3 +688,20 @@ Sun, Mar 23, 2025  3:48:04 PM:
  1 file changed, 19 deletions(-)
  tests:  0|0
 8731f2f
+Sun, Mar 23, 2025  3:51:50 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'crea_lista':
+exercises.c:51:21: error: passing argument 2 of 'pushCurrent' makes pointer from integer without a cast [-Werror=int-conversion]
+   51 |       pushCurrent(L,control);
+      |                     ^~~~~~~
+      |                     |
+      |                     short unsigned int
+In file included from exercises.c:6:
+arraylist.h:23:33: note: expected 'void *' but argument is of type 'short unsigned int'
+   23 | void pushCurrent(List *L, void *dato);
+      |                           ~~~~~~^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+86c4b84
