@@ -521,3 +521,26 @@ exercises.c:85:9: error: unused variable 'valor' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 12685f9
+Sun, Mar 23, 2025  2:12:21 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:68:28: error: 'valor' is a pointer; did you mean to use '->'?
+   68 |       suma += (*(int)(valor.data));
+      |                            ^
+      |                            ->
+exercises.c:63:10: error: variable 'valor' set but not used [-Werror=unused-but-set-variable]
+   63 |    List *valor = first(L);
+      |          ^~~~~
+exercises.c: In function 'eliminaElementos':
+exercises.c:90:22: error: 'valor' is a pointer; did you mean to use '->'?
+   90 |       if(*(int)(valor.data) == elem) popCurrent(L);
+      |                      ^
+      |                      ->
+exercises.c:85:10: error: variable 'valor' set but not used [-Werror=unused-but-set-variable]
+   85 |    List *valor = first(L);
+      |          ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+de2564c
