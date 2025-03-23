@@ -45,9 +45,7 @@ List* crea_lista()
 {
    List* L = create_list();
 
-   int control; 
-
-   L = (List *) malloc(10 * sizeof(List*));
+   L = (List *) malloc(10 * sizeof(List));
    
    return L;
 }
