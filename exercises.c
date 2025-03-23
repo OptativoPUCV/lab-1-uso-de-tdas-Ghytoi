@@ -139,7 +139,7 @@ int parentesisBalanceados(char *cadena)
    for (control = 0, control2 = 9; control < talla; control++, control2--)
    {
       push(pila1, cadena[control]);
-      push(pila2, cadena[control]);
+      push(pila2, cadena[control2]);
    }
    while (pila1 != NULL)
    {
