@@ -138,8 +138,14 @@ int parentesisBalanceados(char *cadena)
 
    for (control = 0, control2 = 9; control < talla; control++, control2--)
    {
-      push(pila1, cadena[control]);
-      push(pila2, cadena[control2]);
+      char *dato1 = (char *) malloc(sizeof(char));
+      char *dato2 = (char *) malloc(sizeof(char));
+
+      *dato1 = cadena[control];
+      *dato2 = cadena[control2];
+
+      push(pila1, dato1);
+      push(pila2, dato2);
    }
    while (pila1 != NULL)
    {
