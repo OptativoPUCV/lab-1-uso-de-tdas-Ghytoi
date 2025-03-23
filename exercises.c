@@ -137,7 +137,7 @@ int parentesisBalanceados(char *cadena)
 
    if(talla % 2 != 0) return 0;
 
-   for (control = 0, control2 = 9; control < talla; control++, control2--)
+   for (control = 0, control2 = talla-1; control < talla; control++, control2--)
    {
       char *dato1 = (char *) malloc(sizeof(char));
       char *dato2 = (char *) malloc(sizeof(char));
