@@ -1305,3 +1305,29 @@ exercises.c:154:25: error: initialization of 'char' from 'void *' makes integer 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 3c073bd
+Sun, Mar 23, 2025  7:26:07 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:156:22: error: comparison between pointer and integer [-Werror]
+  156 |       if (lastValor1 == '(' && lastValor2 == ')') balanceado++;
+      |                      ^~
+exercises.c:156:43: error: comparison between pointer and integer [-Werror]
+  156 |       if (lastValor1 == '(' && lastValor2 == ')') balanceado++;
+      |                                           ^~
+exercises.c:157:27: error: comparison between pointer and integer [-Werror]
+  157 |       else if (lastValor1 == '[' && lastValor2 == ']') balanceado++;
+      |                           ^~
+exercises.c:157:48: error: comparison between pointer and integer [-Werror]
+  157 |       else if (lastValor1 == '[' && lastValor2 == ']') balanceado++;
+      |                                                ^~
+exercises.c:158:27: error: comparison between pointer and integer [-Werror]
+  158 |       else if (lastValor1 == '{' && lastValor2 == '}') balanceado++;
+      |                           ^~
+exercises.c:158:48: error: comparison between pointer and integer [-Werror]
+  158 |       else if (lastValor1 == '{' && lastValor2 == '}') balanceado++;
+      |                                                ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+99673ad

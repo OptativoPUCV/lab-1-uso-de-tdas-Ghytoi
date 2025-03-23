@@ -150,8 +150,8 @@ int parentesisBalanceados(char *cadena)
    }
    while (top(pila1) != NULL)
    {
-      char lastValor1 = pop(pila1);
-      char lastValor2 = pop(pila2);
+      char *lastValor1 = pop(pila1);
+      char *lastValor2 = pop(pila2);
 
       if (lastValor1 == '(' && lastValor2 == ')') balanceado++;
       else if (lastValor1 == '[' && lastValor2 == ']') balanceado++;
