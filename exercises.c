@@ -62,6 +62,7 @@ int sumaLista(List *L)
 {
    int control, suma = 0;
    List *valor = NULL;
+   
    valor = first(L);
    for(control = 1; control <= 10; control++)
    {

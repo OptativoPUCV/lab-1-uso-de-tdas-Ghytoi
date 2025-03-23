@@ -110,3 +110,19 @@ exercises.c:92:10: error: invalid use of incomplete typedef 'List'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 96ebd32
+Sun, Mar 23, 2025 12:29:43 PM: 
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:69:15: error: invalid use of incomplete typedef 'List'
+   69 |       suma += (*valor);
+      |               ^
+exercises.c:63:17: error: variable 'suma' set but not used [-Werror=unused-but-set-variable]
+   63 |    int control, suma = 0;
+      |                 ^~~~
+exercises.c: In function 'eliminaElementos':
+exercises.c:93:10: error: invalid use of incomplete typedef 'List'
+   93 |       if((*valor) == elem) popCurrent(L);
+      |          ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2bdb384
