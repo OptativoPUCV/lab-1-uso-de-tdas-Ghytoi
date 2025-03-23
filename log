@@ -715,3 +715,15 @@ Sun, Mar 23, 2025  3:53:01 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 21a78cc
+Sun, Mar 23, 2025  3:53:59 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'crea_lista':
+exercises.c:51:7: error: implicit declaration of function 'pushback'; did you mean 'pushBack'? [-Werror=implicit-function-declaration]
+   51 |       pushback(L, &control);
+      |       ^~~~~~~~
+      |       pushBack
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ef75c88
