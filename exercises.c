@@ -132,7 +132,8 @@ int parentesisBalanceados(char *cadena)
    Stack *pila1 = create_stack();
    Stack *pila2 = create_stack();
 
-   size_t talla = strlen(cadena), control, control2, balanceado = 0;
+   size_t talla = strlen(cadena);
+   size_t control, control2, balanceado = 0;
 
    if(talla % 2 != 0) return 0;
 
