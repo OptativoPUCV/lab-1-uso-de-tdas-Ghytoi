@@ -61,7 +61,7 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) 
 {
    int control, suma = 0;
-   List *valor = createlist();
+   List *valor = first(L);
    
    valor = first(L);
    for(control = 1; control <= 10; control++)
