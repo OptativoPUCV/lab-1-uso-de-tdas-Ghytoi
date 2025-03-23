@@ -683,3 +683,8 @@ C:/msys64/ucrt64/include/string.h:63:52: note: expected 'const char *' but argum
 cc1.exe: all warnings being treated as errors
 Compilation failed
 650cfc5
+Sun, Mar 23, 2025  3:48:04 PM: 
+ exercises.c | 19 -------------------
+ 1 file changed, 19 deletions(-)
+ tests:  0|0
+8731f2f

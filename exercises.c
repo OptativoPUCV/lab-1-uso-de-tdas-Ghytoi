@@ -127,25 +127,6 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 
 int parentesisBalanceados(char *cadena)
 {
-   int talla = 0, control, control2;
-
-   //obtenemos talla
-   while (cadena[talla] != '\0')
-   {
-      talla++;
-   }
-
-   if (talla % 2 == 0)
-   {
-      for (control = 0, control2 = 9; control < (talla /2); )
-      {
-         if (strcmp(cadena[control], cadena[control2]) == 0)
-         {
-            control++, control2--;
-         }
-         else return 0;
-      }
-   }
    return 0;
 }
 
