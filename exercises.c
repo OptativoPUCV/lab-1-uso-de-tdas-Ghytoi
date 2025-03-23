@@ -60,12 +60,12 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) 
 {
-   List *valor = first(L);
+   List valor = first(L);
 
    int control, suma = 0;
    for(control = 1; control <= 10; control++)
    {
-      suma += (*(int*)(valor->data));
+      suma += (*(int)(valor.data));
       valor = next(L);
    }
    return suma;
@@ -82,12 +82,12 @@ posiciona en el elemento anterior.
 
 void eliminaElementos(List*L, int elem) 
 {
-   List *valor = first(L);
+   List valor = first(L);
 
    int control;
    for(control = 1; control <= 10; control++)
    {
-      if(*(int)(valor->data) == elem) popCurrent(L);
+      if(*(int)(valor.data) == elem) popCurrent(L);
       valor = next(L);
    }
 }

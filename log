@@ -498,3 +498,26 @@ exercises.c:90:22: error: invalid use of incomplete typedef 'List'
       |                      ^~
 Compilation failed
 70f3a82
+Sun, Mar 23, 2025  2:09:42 PM: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:63:4: error: variable 'valor' has initializer but incomplete type
+   63 |    List valor = first(L);
+      |    ^~~~
+exercises.c:63:9: error: storage size of 'valor' isn't known
+   63 |    List valor = first(L);
+      |         ^~~~~
+exercises.c:63:9: error: unused variable 'valor' [-Werror=unused-variable]
+exercises.c: In function 'eliminaElementos':
+exercises.c:85:4: error: variable 'valor' has initializer but incomplete type
+   85 |    List valor = first(L);
+      |    ^~~~
+exercises.c:85:9: error: storage size of 'valor' isn't known
+   85 |    List valor = first(L);
+      |         ^~~~~
+exercises.c:85:9: error: unused variable 'valor' [-Werror=unused-variable]
+cc1.exe: all warnings being treated as errors
+Compilation failed
+12685f9
