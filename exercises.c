@@ -48,7 +48,7 @@ List* crea_lista()
    unsigned short control;
    for (control = 1; control <= 10 ; control++)
    {
-      L = (List*) malloc(sizeof(List) * control);
+      L = (List*) malloc(sizeof(List*) * control);
       pushCurrent(L, &control);
    }
    return L;

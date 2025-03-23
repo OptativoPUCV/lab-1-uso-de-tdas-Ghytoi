@@ -772,3 +772,8 @@ exercises.c:51:33: error: invalid application of 'sizeof' to incomplete type 'Li
       |                                 ^~~~
 Compilation failed
 48fe6cd
+Sun, Mar 23, 2025  4:04:19 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+b59f84f
